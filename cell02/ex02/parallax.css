@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+.parallax {
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image1 {
+    background-image: url("image1.jpg");
+}
+
+.image2 {
+    background-image: url("image2.jpg");
+}
+
+.message {
+    color: white;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+}
+
+.black-block {
+    height: 250px;
+    background-color: black;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

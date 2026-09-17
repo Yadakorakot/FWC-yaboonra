@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #1a1a1a;
+    background-color: white;
+}
+
+.container {
+    width: 88%;
+    max-width: 1350px;
+
+    margin: auto;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    border-bottom: 1px solid #dddddd;
+
+    background-color: white;
+}
+
+.nav-content {
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 0;
+
+    font-size: 23px;
+}
+
+nav {
+    display: flex;
+
+    gap: 45px;
+}
+
+nav a {
+    color: #60656f;
+
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+    color: black;
+}
+
+
+/* INTRO */
+
+.intro {
+    padding: 55px 0 65px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #dddddd;
+}
+
+.welcome {
+    margin-bottom: 20px;
+
+    color: #999999;
+
+    letter-spacing: 4px;
+
+    font-size: 14px;
+}
+
+.intro h1 {
+    margin: 0 0 20px;
+
+    font-size: 58px;
+
+    color: black;
+}
+
+.intro-text {
+    max-width: 800px;
+
+    margin: auto;
+
+    color: #60656f;
+
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+/* MEMBERS */
+
+.members {
+    padding: 35px 0;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+    border-bottom: 1px solid #dddddd;
+}
+
+.member-card {
+    min-height: 360px;
+
+    padding: 40px;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.member-image {
+    width: 35%;
+}
+
+.member-image img {
+    width: 100%;
+    max-width: 180px;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+.member-info {
+    width: 65%;
+}
+
+.member-label {
+    margin: 0 0 10px;
+
+    color: #999999;
+
+    letter-spacing: 2px;
+
+    font-size: 14px;
+}
+
+.member-info h2 {
+    margin: 0 0 5px;
+
+    font-size: 31px;
+
+    color: black;
+}
+
+.member-info h3 {
+    margin: 0;
+
+    color: #666666;
+
+    font-weight: normal;
+}
+
+.line {
+    width: 40px;
+    height: 2px;
+
+    margin: 20px 0;
+
+    background-color: black;
+}
+
+.member-info p {
+    color: #60656f;
+
+    line-height: 1.5;
+}
+
+
+/* RESUME LINK */
+
+.resume-link {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 13px 30px;
+
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+
+    color: black;
+
+    text-decoration: none;
+}
+
+.resume-link:hover {
+    background-color: #f3f3f3;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 30px;
+
+    text-align: center;
+
+    color: #777777;
+
+    font-size: 14px;
+}
+
+.footer-title {
+    letter-spacing: 3px;
+
+    color: #999999;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .members {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .nav-content {
+        height: auto;
+
+        padding: 20px 0;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    .intro h1 {
+        font-size: 40px;
+    }
+
+    .intro-text {
+        font-size: 17px;
+    }
+
+    .member-card {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .member-image,
+    .member-info {
+        width: 100%;
+    }
+
+    .line {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
